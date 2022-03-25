@@ -59,6 +59,7 @@ class ClassRoom{
 	Library lbObj = new Library();
 	Aquarium aqObj = new Aquarium();
 	Book bObj = new Book();
+	Laptop lpObj =new Laptop();
 }
 class Library{
 	
@@ -95,5 +96,8 @@ class Vehicle{
 	
 }
 class TwoWheeler extends Vehicle{
+	
+}
+class Laptop{
 	
 }
