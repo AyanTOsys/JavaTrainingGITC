@@ -1,5 +1,5 @@
 
-public class Book {
+public class Book implements Comparable<Book>{
 	double isbnNumber;
 	String bookName;
 	String author;
@@ -56,5 +56,10 @@ public class Book {
 		return "Book [isbnNumber=" + isbnNumber + ", bookName=" + bookName + ", author=" + author + ", numofPages="
 				+ numofPages + ", edition=" + edition + ", price=" + price + "]";
 	}
-	
+	@Override
+	public int compareTo(Book o) {
+		System.out.println("Comparing Book ISBN :"+isbnNumber+" with "+o.isbnNumber);
+		return Double.compare(isbnNumber,o.isbnNumber);
+	}
+
 }
