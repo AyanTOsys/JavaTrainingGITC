@@ -1,0 +1,34 @@
+create table proj_transaction1 
+(
+transid int primary key not null,
+transdt date not null,
+transtype varchar(2) not null,
+dracno int not null,
+craccno int not null,
+transdesc varchar(20),
+transamt float not null,
+dracbal float,
+cracbal float
+)
+
+===============================================
+INSERT INTO "PUBLIC"."PROJ_TRANSACTION1"
+( "TRANSID", "TRANSDT", "DRACNO", "CRACCNO", "TRANSDESC", "TRANSAMT", "DRACBAL", "CRACBAL" )
+VALUES (101 ,'2022-04-01' ,1 ,2 , 'TRF',1000 ,50000 ,10000 )
+
+INSERT INTO "PUBLIC"."PROJ_TRANSACTION1"
+VALUES (102 ,'2022-04-03' ,2,1 , 'TRF',1000 ,9000 ,51000 )
+
+INSERT INTO "PUBLIC"."PROJ_TRANSACTION1"
+VALUES (103 ,'2022-04-05' ,1 ,2 , 'TRF',1000 ,50000 ,10000 )
+
+INSERT INTO "PUBLIC"."PROJ_TRANSACTION1"
+VALUES (104 ,'2022-04-10' ,2,1 , 'TRF',1000 ,9000 ,51000 )
+
+INSERT INTO "PUBLIC"."PROJ_TRANSACTION1"
+VALUES (105 ,'2022-04-01' ,1 ,2 , 'TRF',1000 ,50000 ,10000 )
+
+INSERT INTO "PUBLIC"."PROJ_TRANSACTION1"
+VALUES (106 ,'2022-04-20' ,2,1 , 'TRF',1000 ,9000 ,51000 )
+
+===================================================
